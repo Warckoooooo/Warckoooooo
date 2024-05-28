@@ -1,0 +1,27 @@
+name: Update README
+
+on:
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run update script
+      run: |
+        chmod +x ./update_age.sh
+        ./update_age.sh
+    -   name: set up Git for GitHub          
+        run: |
+          git config user.name "automaton"
+          git config user.email "automaton@github.com"
+    -   name: Create Pull Request or Commit to repository directly
+        run: |
+          git add README.md
+          git commit -m "Age mis à jour"
+          git push
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
