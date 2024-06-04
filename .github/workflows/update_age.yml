@@ -2,7 +2,7 @@ name: Update README
 
 on:
   schedule:
-    - cron:  '0 0 * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   build:
@@ -22,10 +22,9 @@ jobs:
           git config user.email "automaton@github.com"
       
       - name: Create Pull Request or Commit to repository directly
+        env:
+          PAT: ${{ secrets.PAT }}
         run: |
           git add README.md
           git commit -m "Age mis à jour"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          git push https://x-access-token:${PAT}@github.com/Warckoooooo/Warckoooooo.git
