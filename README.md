@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">Hi 👋, I'm Ryan</h1>
-<h3 align="center">A guy who enjoy coding and learn about Coding</h3>
+<h3 align="center">A guy who enjoy coding and learn about it</h3>
 - 🔭 I’m currently working on <a href="https://github.com/Warckoooooo/mooovie">Mooovie</a>
 
 <h3 align="left">Languages and Tools:</h3>
