@@ -2,7 +2,7 @@ name: Update README
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *' # Runs every day at midnight
 
 jobs:
   build:
@@ -11,20 +11,32 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Set up the script
-        run: |
-          chmod +x .github/workflows/update_age.sh
-          .github/workflows/update_age.sh
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.12
+
+      - name: Install dependencies
+        run: pip install python-dateutil
       
-      - name: Set up Git for GitHub          
+      - name: Run update_age.py script
+        run: python .github/workflows/update_age.py
+
+      - name: Set up Git for GitHub
         run: |
-          git config user.name "automaton"
-          git config user.email "automaton@github.com"
-      
+          git config --global user.name "automaton"
+          git config --global user.email "automaton@github.com"
+
       - name: Create Pull Request or Commit to repository directly
         env:
-          PAT: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git add README.md
-          git commit -m "Age mis à jour"
-          git push https://x-access-token:${PAT}@github.com/Warckoooooo/Warckoooooo.git
+          if git diff-index --quiet HEAD; then
+            echo "No changes detected."
+          else
+            git commit -m "Update Age"
+            git push https://x-access-token:${{ secrets.PAT }}@github.com/Warckoooooo/Warckoooooo.git || \
+              (git fetch origin && \
+              git rebase origin/main && \
+              git push https://x-access-token:${{ secrets.PAT }}@github.com/Warckoooooo/Warckoooooo.git)
