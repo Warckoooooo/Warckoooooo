@@ -30,13 +30,14 @@ jobs:
       - name: Create Pull Request or Commit to repository directly
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAT: ${{ secrets.PAT }}
         run: |
           git add README.md
           if git diff-index --quiet HEAD; then
             echo "No changes detected."
           else
             git commit -m "Update Age"
-            git push https://x-access-token:${{ secrets.PAT }}@github.com/Warckoooooo/Warckoooooo.git || \
-              (git fetch origin && \
-              git rebase origin/main && \
-              git push https://x-access-token:${{ secrets.PAT }}@github.com/Warckoooooo/Warckoooooo.git)
+            git push https://x-access-token:${PAT}@github.com/Warckoooooo/Warckoooooo.git || \
+            (git fetch origin && \
+            git rebase origin/main && \
+            git push https://x-access-token:${PAT}@github.com/Warckoooooo/Warckoooooo.git)
