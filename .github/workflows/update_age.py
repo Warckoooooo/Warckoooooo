@@ -1,21 +1,19 @@
-from datetime import datetime
-from dateutil.relativedelta import relativedelta
-import re
+import datetime
 
-# Define my birth date
-birth_date = datetime(2002, 9, 2)
+# Your birthdate
+birthdate = datetime.date(2002, 09, 02)
 
-# Calculate my age in days
-today = datetime.today()
-age_in_days = (today - birth_date).days
+# Calculate the number of days since birth
+today = datetime.date.today()
+days_old = (today - birthdate).days
 
-# Read the content of README.md
+# Read the README.md file
 with open("README.md", "r") as file:
     readme_content = file.read()
 
-# Update the age in README.md
-updated_content = re.sub(r'Hi 👋, I\'m Ryan - \d+ days old', f"Hi 👋, I'm Ryan - {age_in_days} days old", readme_content)
+# Replace the age placeholder with the actual age
+updated_readme_content = readme_content.replace("I'm Ryan -  days old", f"I'm Ryan - {days_old} days old")
 
 # Write the updated content back to README.md
 with open("README.md", "w") as file:
-    file.write(updated_content)
+    file.write(updated_readme_content)

@@ -1,43 +1,35 @@
-name: Update README
+name: Update Age in README
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs every day at midnight
+    - cron: '0 0 * * *'  # Runs every day at midnight
+  push:
+    branches:
+      - main  # Adjust this if your default branch is not 'main'
 
 jobs:
-  build:
+  update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.12
+          python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install python-dateutil
-      
-      - name: Run update_age.py script
-        run: python .github/workflows/update_age.py
+        run: pip install -r requirements.txt
 
-      - name: Set up Git for GitHub
-        run: |
-          git config --global user.name "automaton"
-          git config --global user.email "automaton@github.com"
+      - name: Update README
+        run: python update_readme.py
 
-      - name: Create Pull Request or Commit to repository directly
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PAT: ${{ secrets.PAT }}
+      - name: Commit changes
         run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add README.md
-          if git diff-index --quiet HEAD; then
-            echo "No changes detected."
-          else
-            git commit -m "Update Age"
-            git push https://x-access-token:${PAT}@github.com/Warckoooooo/Warckoooooo.git || \
-            (git fetch origin && \
-            git rebase origin/main && \
-            git push https://x-access-token:${PAT}@github.com/Warckoooooo/Warckoooooo.git)
+          git commit -m 'Update age in README.md'
+          git push
