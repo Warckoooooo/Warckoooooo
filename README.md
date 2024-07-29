@@ -42,5 +42,4 @@ Update on 2024-07-29 17:14:23
 
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=warckoooooo" alt="warckoooooo" /></a> </p>
 
-Update on 2024-07-29 17:17:35
-Update on 2024-07-29 17:18:12
+Update on 2024-07-29 17:22:04
