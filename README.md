@@ -14,6 +14,6 @@
 
 ---
 
-[Trophées GitHub](https://github.com/ryo-ma/github-profile-trophy)
+[GitHub Trophies](https://github.com/ryo-ma/github-profile-trophy)
 
 ![Trophées GitHub](https://github-profile-trophy.vercel.app/?username=warckoooooo)
