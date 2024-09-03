@@ -6,12 +6,11 @@
 
 ---
 
-![Statistiques GitHub de Ryan](https://github-readme-stats.vercel.app/api?username=Warckoooooo&show_icons=true)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=warckoooooo&hide=stars,contribs&&rank_icon=github)
 
-![Langages les plus utilisés](https://github-readme-stats.vercel.app/api/top-langs?username=warckoooooo&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=warckoooooo&layout=compact)
 
-![Ryan's Streak](https://github-readme-streak-stats.herokuapp.com/?user=warckoooooo&)
-
+![Ryan's Streak](https://github-readme-streak-stats.herokuapp.com/?user=warckoooooo)
 ---
 
 [GitHub Trophies](https://github.com/ryo-ma/github-profile-trophy)
