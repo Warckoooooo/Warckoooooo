@@ -16,5 +16,6 @@
 
 [GitHub Trophies](https://github.com/ryo-ma/github-profile-trophy)
 
-![Trophées GitHub](https://github-profile-trophy.vercel.app/?username=warckoooooo)
+![Trophées GitHub](https://github-profile-trophy.vercel.app/?username=warckoooooo&title=-Stars,-Followers)
+
 Update on 2024-09-03 02:00:01
