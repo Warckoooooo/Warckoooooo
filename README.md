@@ -1,20 +1,27 @@
 ![Vues du profil](https://komarev.com/ghpvc/?username=warckoooooo&label=Profile%20views&color=0e75b6&style=flat)
 
-# Hi, i'm Ryan 👋
+<p align="center" style="font-size: 2em; font-weight: bold;">
+  Hi, I'm Ryan 👋
+</p>
 
-### A guy who likes to learn about the world of code
+<p align="center" style="font-size: 1.5em;">
+  A guy who likes to learn about the world of code
+</p>
 
----
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=warckoooooo&hide=stars,contribs&&rank_icon=github" alt="GitHub stats">
+</p>
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=warckoooooo&hide=stars,contribs&&rank_icon=github)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=warckoooooo&layout=compact" alt="Top Langs">
+</p>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=warckoooooo&layout=compact)
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=warckoooooo" alt="Ryan's Streak">
+</p>
 
-![Ryan's Streak](https://github-readme-streak-stats.herokuapp.com/?user=warckoooooo)
----
-
-[GitHub Trophies](https://github.com/ryo-ma/github-profile-trophy)
-
-![Trophées GitHub](https://github-profile-trophy.vercel.app/?username=warckoooooo&title=-Stars,-Followers)
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=warckoooooo&title=-Stars,-Followers" alt="Trophées GitHub" style="margin-left: 18%;">
+</p>
 
 Update on 2024-09-18 14:15:01
