@@ -4,10 +4,6 @@
   Hi, I'm Ryan 👋
 </p>
 
-<p align="center" style="font-size: 1.5em;">
-  A guy who likes to learn about the world of code
-</p>
-
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=warckoooooo&hide=stars,contribs&&rank_icon=github" alt="GitHub stats">
 </p>
