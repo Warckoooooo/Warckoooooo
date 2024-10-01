@@ -1,5 +1,4 @@
 ![Vues du profil](https://komarev.com/ghpvc/?username=warckoooooo&label=Profile%20views&color=0e75b6&style=flat)
-
 <h1 align="center">Hi 👋, I'm Ryan</h1>
 
 ---
@@ -9,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=warckoooooo&layout=compact" alt="Top Langs">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=warckoooooo&layout=compact&langs_count=10&&size_weight=0.5&count_weight=0.5" alt="Top Langs">
 </p>
 
 <p align="center">
@@ -18,4 +17,4 @@
 
 ---
 
-Updated on 2024-10-01 02:00:01
+Updated on 2024-10-01 18:11:17
