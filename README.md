@@ -5,15 +5,11 @@
 <h1 align="center">Hey, I'm Ryan 👋</h1>
 
 <p align="center">
-  <em>Building things, breaking things, learning along the way.</em>
+  <em>ici ça dev</em>
 </p>
 
 ---
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=warckoooooo&hide=stars,contribs&rank_icon=github&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" />
-  <br/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=warckoooooo&theme=tokyonight&hide_border=true" alt="GitHub streak" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=warckoooooo&layout=compact&langs_count=10&size_weight=0.5&count_weight=0.5&theme=tokyonight&hide_border=true" alt="Top languages" />
 </div>
